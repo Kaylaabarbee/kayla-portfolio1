@@ -1,0 +1,84 @@
+:root {
+    --blue: #A7C5D8;
+    --brown: #6B4C3B;
+    --cream: #F9F5EF;
+    --accent: #D8A47F;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--cream);
+    color: var(--brown);
+    line-height: 1.6;
+    padding: 2rem;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color: var(--brown);
+  }
+  
+  nav {
+    margin-top: 1rem;
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    color: var(--brown);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: var(--accent);
+  }
+  
+  .intro, .featured, footer {
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+    padding: 2rem;
+    background-color: var(--blue);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .project-preview {
+    display: grid;
+    grid-template-columns: 61.8% 38.2%;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .project-card {
+    background-color: var(--cream);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--brown);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .project-card:nth-child(3) {
+    grid-column: span 2;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    background-color: var(--accent);
+    color: white;
+  }
+
