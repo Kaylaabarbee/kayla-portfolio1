@@ -125,4 +125,56 @@
         font-size: 1.5rem;
       }
     }
+    .about-me {
+      background-color: var(--blue);
+      color: var(--cream);
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 16px;
+      margin: 2rem auto;
+      max-width: 800px;
+    }
     
+    .about-content h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--cream);
+    }
+    
+    .about-content p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      font-weight: 300;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .spiral-bg {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 300px;
+      z-index: 0;
+      pointer-events: none;
+      opacity: 0.3;
+    }
+    
+    .about-me {
+      position: relative;
+      overflow: hidden;
+      background-color: var(--blue);
+      color: var(--cream);
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 16px;
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+    
+    .about-content {
+      position: relative;
+      z-index: 1;
+    }
+        
