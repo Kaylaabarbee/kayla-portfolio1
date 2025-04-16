@@ -81,6 +81,17 @@ footer {
   background-color: var(--accent);
   color: white;
 }
+/* Logo Container */
+.logo-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 72pt;  /* Adjust size as needed */
+  height: auto;
+  max-width: 100%;
+}
 
 
         
