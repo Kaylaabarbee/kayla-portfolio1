@@ -80,45 +80,49 @@
     font-size: 0.9rem;
     background-color: var(--accent);
     color: white;
-  }
-  .adobe-icons {
-    background-color: var(--cream);
-    text-align: center;
-    padding: 4rem 2rem;
-    margin-top: 4rem;
-  }
-  
-  .adobe-icons h2 {
-    font-family: 'DM Serif Display', serif;
-    color: var(--brown);
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .icon-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  
-  .icon-grid img {
-    width: 80px;
-    height: 80px;
-    transition: transform 0.3s ease;
-  }
-  
-  .icon-grid img:hover {
-    transform: scale(1.15);
-  }
-  @media (max-width: 600px) {
-    .icon-grid {
-      gap: 1rem;
+    .design-tools-section {
+      background-color: var(--cream);
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 16px;
+      margin: 4rem 2rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.05);
     }
-  
-    .icon-grid img {
-      width: 60px;
-      height: 60px;
+    
+    .tools-title {
+      font-family: 'DM Serif Display', serif;
+      color: var(--brown);
+      font-size: 2rem;
+      margin-bottom: 2rem;
     }
-  }
+    
+    .tools-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .tools-row img {
+      width: 48px;
+      height: 48px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0.8;
+    }
+    
+    .tools-row img:hover {
+      transform: scale(1.15);
+      opacity: 1;
+    }
+    @media (max-width: 500px) {
+      .tools-row img {
+        width: 40px;
+        height: 40px;
+      }
+    
+      .tools-title {
+        font-size: 1.5rem;
+      }
+    }
     
