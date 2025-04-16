@@ -1,183 +1,86 @@
 :root {
-    --blue: #A7C5D8;
-    --brown: #6B4C3B;
-    --cream: #F9F5EF;
-    --accent: #D8A47F;
-  }
-  
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--cream);
-    color: var(--brown);
-    line-height: 1.6;
-    padding: 2rem;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  header h1 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.5rem;
-    color: var(--brown);
-  }
-  
-  nav {
-    margin-top: 1rem;
-  }
-  
-  nav a {
-    margin: 0 1rem;
-    color: var(--brown);
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    color: var(--accent);
-  }
-  
-  .intro, .featured, footer {
-    max-width: 800px;
-    margin: 0 auto 4rem auto;
-    padding: 2rem;
-    background-color: var(--blue);
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  }
-  
-  .project-preview {
-    display: grid;
-    grid-template-columns: 61.8% 38.2%;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .project-card {
-    background-color: var(--cream);
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: bold;
-    color: var(--brown);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  }
-  
-  .project-card:nth-child(3) {
-    grid-column: span 2;
-  }
-  
-  footer {
-    text-align: center;
-    font-size: 0.9rem;
-    background-color: var(--accent);
-    color: white;
-    .design-tools-section {
-      background-color: var(--cream);
-      padding: 4rem 2rem;
-      text-align: center;
-      border-radius: 16px;
-      margin: 4rem 2rem;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.05);
-    }
-    
-    .tools-title {
-      font-family: 'DM Serif Display', serif;
-      color: var(--brown);
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    
-    .tools-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-    
-    .tools-row img {
-      width: 48px;
-      height: 48px;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-      opacity: 0.8;
-    }
-    
-    .tools-row img:hover {
-      transform: scale(1.15);
-      opacity: 1;
-    }
-    @media (max-width: 500px) {
-      .tools-row img {
-        width: 40px;
-        height: 40px;
-      }
-    
-      .tools-title {
-        font-size: 1.5rem;
-      }
-    }
-    .about-me {
-      background-color: var(--blue);
-      color: var(--cream);
-      padding: 4rem 2rem;
-      text-align: center;
-      border-radius: 16px;
-      margin: 2rem auto;
-      max-width: 800px;
-    }
-    
-    .about-content h2 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: var(--cream);
-    }
-    
-    .about-content p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      font-weight: 300;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .spiral-bg {
-      position: absolute;
-      top: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 300px;
-      height: 300px;
-      z-index: 0;
-      pointer-events: none;
-      opacity: 0.3;
-    }
-    
-    .about-me {
-      position: relative;
-      overflow: hidden;
-      background-color: var(--blue);
-      color: var(--cream);
-      padding: 4rem 2rem;
-      text-align: center;
-      border-radius: 16px;
-      margin: 2rem auto;
-      max-width: 800px;
-    }
-    
-    .about-content {
-      position: relative;
-      z-index: 1;
-    }/* .design-tools-section {
-   ...
-} */
+  --blue: #A7C5D8;
+  --brown: #6B4C3B;
+  --cream: #F9F5EF;
+  --accent: #D8A47F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--cream);
+  color: var(--brown);
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+header h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5rem;
+  color: var(--brown);
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--brown);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.intro, .featured, footer {
+  max-width: 800px;
+  margin: 0 auto 4rem auto;
+  padding: 2rem;
+  background-color: var(--blue);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.project-preview {
+  display: grid;
+  grid-template-columns: 61.8% 38.2%;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  background-color: var(--cream);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--brown);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project-card:nth-child(3) {
+  grid-column: span 2;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: var(--accent);
+  color: white;
+}
+
 
         
